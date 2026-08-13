@@ -1,0 +1,383 @@
+:root{
+    --cor_borda_menu: #febbe0;
+    --cor_menu: #ffe0f1;
+    --cor_tex: #fae9f2;
+    --borda_tex: #D444BC;
+    --tamanho_caixa: 900px;
+    --altura_caixa: 500px;
+    --fonte:"Bree Serif", serif;
+    --fonte_livro:"Gamja Flower", sans-serif;
+}
+*{
+    padding: 0;
+    margin:0;
+}
+
+.gamja-flower-regular {
+  font-family: "Gamja Flower", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+  background:
+    radial-gradient(circle, #ffd0d0 35px, transparent 36px) 0 0 / 150px 150px,
+    radial-gradient(circle, #ffd0d0 35px, transparent 36px) 75px 75px / 150px 150px;
+    background-color: rgb(255, 247, 247);
+  
+}
+/*menu*/
+.menu{
+    background-color: #ffe0f1;
+    width: 400px;
+    height: 1000px;
+    position: fixed;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    border: var(--cor_borda_menu) solid 30px;
+    border-left: none;
+}
+#logo{
+    width: 600px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .tab-button {
+    padding: 10px;
+    cursor: pointer;
+    background: var(--cor_menu);
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+.tab-button:hover{
+    color: var(--cor_tex);
+    -webkit-text-stroke:#e591f4 2px;
+
+}
+
+  .tab-button.active {
+    color: var(--cor_tex);
+    -webkit-text-stroke:#f2569f 2px;
+  }
+
+  .tab-content {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid var(--cor_borda_menu);
+    background-color: var(--cor_menu);
+    position: relative;
+    left: 700px;
+    width: var(--tamanho_caixa);
+    height: var(--altura_caixa);
+    border-radius: 12px;
+    top: 100px;
+    text-align: center;
+  }
+
+
+  .tab-content.active {
+    display: block;
+  }
+
+
+  button{
+    color: var(--cor_tex);
+    -webkit-text-stroke: var(--borda_tex) 2px;
+  }
+ 
+/*final do menu*/
+
+/*tab1*/
+
+.homet{
+  font-family: var(--fonte);
+  font-size: 30px;
+  color: white;
+  padding: 30px;
+}
+
+.home{
+  font-family: var(--fonte);
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  gap: 55px;
+
+}
+
+.text4{
+  font-family: var(--fonte);
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  gap: 55px;
+
+}
+
+
+/*tab2*/
+ #tab2{
+  position: fixed;
+  background-color: transparent;
+  border: none;
+  height: 600px;
+  width: 900px; 
+ }
+
+.tal {
+  position: absolute;
+  background-color: var(--cor_menu);
+  color: rgb(246, 147, 255);
+  border-radius: 10px;
+  border: var(--cor_borda_menu) solid 2px;
+  opacity: 0; /* deixa invisivel*/
+  transform: translateX(-20px);
+  transition: 0.4s;
+  box-sizing: border-box;
+  inset: 0; 
+  height: 50px;
+  align-self: center;
+}
+.card:hover .tal {
+  opacity: 1;
+  transform: translateX(0);
+}
+.talo {
+  position: absolute;
+  background-color: var(--cor_menu);
+  color: rgb(246, 147, 255);
+  border-radius: 10px;
+  border: var(--cor_borda_menu) solid 2px;
+  opacity: 0; /* deixa invisivel*/
+  transform: translateX(-20px);
+  transition: 0.4s;
+  box-sizing: border-box;
+  inset: 0; 
+  height: 50px;
+}
+.card:hover .talo {
+  opacity: 1;
+  transform: translateX(0);
+}
+.tala {
+  position: absolute;
+  background-color: var(--cor_menu);
+  color: rgb(246, 147, 255);
+  border-radius: 10px;
+  border: var(--cor_borda_menu) solid 2px;
+  opacity: 0; /* deixa invisivel*/
+  transform: translateX(-20px);
+  transition: 0.4s;
+  box-sizing: border-box;
+  inset: 0; 
+  height: 50px;
+  margin-top: 100px;
+}
+.card:hover .tala {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card{
+  position: absolute; 
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: fit-content;
+}
+
+.pos1 { left: 60px; top: -100px; z-index: 2;}
+.pos2 { left: 250px;top: -150px; z-index: 3;}
+.pos3 { left: 550px;top: 250px; z-index: 5;}
+.pos4 { left: -200px; z-index: 4;}
+
+.card img{
+  height: auto;
+  width: 400px;
+  display: block;
+}
+
+.pos1 img{
+  transform: scale(0.9);
+}
+.pos2 img{
+  transform: scale(0.7);
+}
+
+.pos3 img{
+  transform: scale(1.5);
+}
+
+.pos4 img{
+  transform: scale(0.9);
+}
+
+
+.boneco {
+  display: inline-block;
+}
+
+.boneco img {
+  display: block;
+}
+
+.outro{
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(66, 246, 0);
+}
+
+.bree-serif-regular {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#Yuri{
+  color: #761bff;
+}
+#mo{
+  color:rgb(66, 246, 0) ;
+} 
+#say{
+  color: rgb(112, 196, 255);
+}
+/*final tab2*/
+
+/*tab3 */
+#tab3{
+  margin: 0 0 80px;
+}
+
+.container{
+  display: flex;
+  position:relative;
+  align-content: center;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.aba3{
+  font-family: var(--fonte);
+  font-size: 20px;
+  color: white;
+}
+ 
+.itch img{
+  width: 350px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.steam img{
+  width: 400px;
+  border-radius: 12px;
+
+}
+
+.link{
+  text-decoration: none;
+  color: rgb(255, 81, 180);
+  font-size: 25px;
+  
+}
+/*tab3 final*/
+
+/*tab5*/
+#tab5{
+   position: fixed;
+   height: 800px;
+   width: 950px;
+   left: 600px;
+   background-color: #5c9d13;
+}
+.pai{
+  display: flex;         
+  height: 100%;
+}
+
+.pagina{
+  flex: 1;
+  position: relative;
+  background-color: #e5e5e5;
+  padding: 40px;
+  
+  overflow: hidden;  
+}
+.livro{
+  flex: 1.1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  padding: 50px;
+  gap: 50px;
+}
+#marca{
+  position: absolute;
+  height: 650px;
+  margin: 0;
+  display: block;
+  left: -200px;
+  bottom: 190px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+.sticker{
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+.stiner{
+  position: absolute;
+  z-index: 5;
+  bottom: 30px;
+}
+
+.linhas{
+  width: 100%;
+  height: 100%;
+  margin: 15px 0;
+  z-index: 1;
+  position: relative;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 25px,
+    #4f007a6c 29px
+  );
+}
+
+.sticker img:hover{
+  animation: jump 0.3s ease-out;
+}
+
+@keyframes jump{
+  0%   { transform: translateY(0); }
+  40%  { transform: translateY(-40px); }
+  100% { transform: translateY(0); }
+}
+
+.texb{
+    text-decoration: none;
+    font-family: var(--fonte_livro);
+    font-size: 40px;
+    z-index: 3;
+    color: rgb(41, 41, 41);
+    
+}
+
+/*final tab5*/
